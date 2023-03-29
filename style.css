@@ -1,0 +1,105 @@
+body{
+  background-color: rgba(105, 105, 105, 0.07);
+}
+li>a{
+    text-decoration: none;
+    list-style-type: none;
+    color:  #999999;
+}
+.topnav{
+    list-style-type: none;
+    align-items: center;
+}
+.d-flex.topnavri8 {
+    list-style-type: none;
+    color:  #999999;
+  }
+  .list-inline.text-secondary {
+    margin-bottom: 8px;
+  }
+  .container.d-flex.justify-content-between {
+    align-items: end;
+  }
+  #DDCur {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+  }
+  #DDLang {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+}
+
+.checked {
+  color: orange;
+}
+#btnGroupAddon2 {
+  border-radius: 0px 5px 5px 0px;
+  height: 40px;
+}
+.form-control.searchbox {
+  border-radius: 8px 0 0 8px;
+  width: 16rem;
+  
+}
+p.bold.crd {
+  margin-left: 0;
+}
+.text-muted {
+  margin-bottom: auto;
+  
+}
+
+.bold {
+  font-weight: bold;
+  font-size: small;
+  text-decoration: none;
+color: black;
+align-items: center;
+display: flex;
+}
+hr{
+  margin: 3px auto;
+}
+ul.FeProduct {
+  list-style-type: none;
+}
+.prlo {
+ padding: 1px;
+  transform: skew(160deg);
+  background: rgb(6, 185, 36);
+}
+.purple { 
+  
+  font-weight: bold;
+  font-size: small;
+  padding: 1px;
+  transform: skew(160deg);
+  background: rgba(155, 0, 160, 0.63);
+}
+img.crdimg {
+  filter: opacity(0.4);
+}
+.shpimg {
+  width: 550px;
+}
+.card-title {
+  font-size: 14px;
+}
+p {
+  margin: auto;
+}
+
+.colhead{
+  font-size: large;
+}
+ .ml30{
+  margin-left: 30px;
+}
+
+
+
+
+
+

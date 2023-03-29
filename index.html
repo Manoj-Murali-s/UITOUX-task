@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UItoUX</title>
+    <link rel="shortcut icon" href="source-images/svg/car.svg" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Top Nav 1 Starts -->
+
+    <div class="container d-flex justify-content-between">
+
+        <ul class=" topnav d-flex">
+            <li> <a href=" #about" class="px-2">About Us</a></li>
+            <li><a href="#contacts" class="px-2">Contacts</a></li>
+            <li> <a href="#storeLocation" class="px-2">Store Location</a></li>
+            <li> <a href="#trackOrder" class="px-2">Track Order</a></li>
+            <li> <a href="#blog" class="px-2">Blog</a></li>
+        </ul>
+
+        <ul class="list-inline text-secondary">
+            <li class="list-inline-item">Compare:<span class="text-dark p-1">2</span></li>
+            <li class="list-inline-item">Currency:<span class="dropdown open">
+                    <button class="btn  dropdown-toggle" type="button" id="DDCur" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="DDCur">
+                        <a class="dropdown-item active" href="#">RS</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">AUD</a></div>
+                </span>
+            </li>
+            <li class="list-inline-item">Language:<span class="dropdown open">
+                    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item active" href="#">EN</a>
+                        <a class="dropdown-item" href="#">RUS</a>
+                        <a class="dropdown-item" href="#">FR</a>
+                    </div>
+                </span>
+
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Top Nav 1 Ends -->
+
+    <!-- logo to Shopping cart Starts -->
+
+    <div class="container d-flex justify-content-between align-items-center col-md-none col-sm-none col-lg-12">
+        <div class="d-flex align-items-center">
+            <img src="source-images/logo.png" alt="" width="20%">
+
+            <div class="dropdown open px-2">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="source-images/svg/car.svg" alt=""> Select Vehicle
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Honda City</a>
+                    <a class="dropdown-item" href="#">Toyota Supra</a>
+                    <a class="dropdown-item" href="#">Michibuchi Lancer</a>
+                </div>
+            </div>
+
+
+            <div>
+
+                <div class="d-flex form-inputs ">
+                    <input class="form-control searchbox" width="" type="search"
+                        placeholder="Enter Keyword or Part Number">
+                    <div class="input-group-append">
+                        <div class="input-group-text" id="btnGroupAddon2"><img src="source-images/svg/search.png"
+                                alt=""></div>
+                    </div>
+                    <!-- <img src="source-images/svg/search.png" width="1%" alt=""> -->
+
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex ">
+            <!-- heart  -->
+            <div class="heart d-block align-self-center"><img src="source-images/svg/heart.svg" height="25px" class=""
+                    alt=""><span class="badge badge-dark">2</span></div>
+
+
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mx-2 px-1"><img src="source-images/svg/person.svg" height="20px"
+                        alt=""></div>
+
+                <div class="person mb-0">
+                    <p class="text-muted" style="font-size:11px ;">Hello,Log In <br><span class="bold">My Accout</span>
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mx-2 px-1"><img src="source-images/svg/cart-20.svg" height="20px"
+                        alt=""></div>
+
+                <div class="person mb-0">
+                    <p class="text-muted" style="font-size:11px ;">Shopping Cart<br><span class="bold">₹1468.60</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo to Shopping cart Ends -->
+
+    <hr>
+
+    <!-- category to call start -->
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- for left -->
+        <div class="d-flex ">
+            <!-- Category -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="Category" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="source-images/menu.png" class="px-1" alt="">Shop By Category
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Category">
+                    <a class="dropdown-item" href="#">Exterior</a>
+                    <a class="dropdown-item" href="#">Engine</a>
+                    <a class="dropdown-item" href="#">Lights</a>
+                    <a class="dropdown-item" href="#">Interior</a>
+                </div>
+            </div>
+            <!-- home -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="Category" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Home
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <!-- megamenu -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Megamenu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <!-- Shop -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Shop
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <!-- blog -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Blog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <!-- Account -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <!-- pages -->
+            <div class="dropdown open">
+                <a class="btn dropdown-toggle bold" type="button" id="triggerId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Page
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#">Disabled action</a>
+                </div>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="bold">Buy theme</a>
+
+
+
+        </div>
+        <!-- For rignt -->
+        <div>
+            <p class="bold"><span class="text-secondary">Call : </span>0892597807</p>
+
+        </div>
+
+    </div>
+    <!-- category to call End -->
+    <hr>
+
+
+
+    <!-- carousel start  -->
+    <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="source-images/slide-1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="source-images/slide-1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="source-images/slide-1.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel End  -->
+    <br><br>
+    <!-- Brand list Start -->
+
+    <div class="container d-flex flex-wrap justify-content-center mt-4">
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-1.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center"> AIMPARTS</p>
+            </div>
+            <div>
+                <img src="source-images/brand-2.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">WINDENERGY</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-3.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">TURBOELECTRIC</p>
+            </div>
+            <div>
+                <img src="source-images/brand-4.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">STARTONE</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-5.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">BRANDIX</p>
+            </div>
+            <div>
+                <img src="source-images/brand-6.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">ABS-BRAND</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-7.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">GREATCIRCLE</p>
+            </div>
+            <div>
+                <img src="source-images/brand-8.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">JJUSTROMB</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-9.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted  text-center">FASTWHEELS</p>
+            </div>
+            <div>
+                <img src="source-images/brand-10.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">STROYKA-A</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-11.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">MISSION-51</p>
+            </div>
+            <div>
+                <img src="source-images/brand-12.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">FULECORP</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-13.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">REDGATE</p>
+            </div>
+            <div>
+                <img src="source-images/brand-14.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">BLOCKS</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-evenly">
+            <div>
+                <img src="source-images/brand-15.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">BLACKBOX</p>
+            </div>
+            <div>
+                <img src="source-images/brand-16.png" style=" filter: grayscale(100%);" alt="">
+                <p class="text-muted text-center">SQUAREGARAGE</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand list End -->
+
+
+    <br>
+
+    <!-- Featured Products Start  -->
+    <!-- F P header start  -->
+    <div class=" container d-flex justify-content-between align-items-center mt-2">
+       
+       <!-- left -->
+        <div>
+            <h4 class="bold">Featured Products</h4>
+        </div>
+        <!-- right  -->
+        <div>
+            <ul class="FeProduct  text-center d-flex align-items-center mb-0 px-2 ">
+                <li>
+                    <p class="grn prlo px-2 mb-0 text-light ">All</p>
+                </li>
+                <li>
+                    <p class="text-secondary px-2 mb-0">Power Tools</p>
+                </li>
+                <li>
+                    <p class="text-secondary px-2 mb-0">Hands Tools</p>
+                </li>
+                <li>
+                    <p class="text-secondary px-2 mb-0">Plumbing</p>
+                </li>
+                <li>
+                    <p class="grn prlo mx-1 px-1 mb-0 text-light">&lt;</p>
+                </li>
+                <li>
+                    <p class="grn prlo mx-1 px-1 mb-0 text-light">&gt;</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- F P header End  -->
+    <hr>
+
+    <div class="container d-flex justify-content-evenly flex-wrap">
+        <!-- card 1  -->
+        <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" title="Aluminium Wheel">
+            <div class="card mb-4 cardd ">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                        <p class="purple text-white">HOT</p>
+                    </div>
+                    <div class="px-2"><img src="source-images/svg/quickview.svg" alt=""></div>
+                </div>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <img src="source-images/product-1.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="px-3">
+                        <p class="text-muted" style="font-size:small;">SKU: A43-44328-B</p>
+
+
+                        <p class="bold">Glossy Gray 19' Aluminium Wheel AR-19<p>
+
+ <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                17 reviews</small></p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="bold crd">$589.00</p>
+                                    <img src="source-images/svg/cart-20.svg"  class="crdimg" alt="...">
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2  -->
+        <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" title="Aluminium Wheel">
+            <div class="card mb-4 cardd ">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+
+                    </div>
+                    <div class="px-2"><img src="source-images/svg/quickview.svg" alt=""></div>
+                </div>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <img src="source-images/product-2.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="px-3">
+                        <p class="text-muted" style="font-size:small;">SKU: 729-51203-B</p>
+
+
+                        <p class="bold">Twin Exhaust Pipe From Brandix Z54<p>
+ <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                4 reviews</small></p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="bold crd">$589.00</p>
+                                    <img src="source-images/svg/cart-20.svg"  class="crdimg" alt="...">
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 3  -->
+        <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" title="Aluminium Wheel">
+            <div class="card mb-4 cardd ">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                       
+                    </div>
+                    <div class="px-2"><img src="source-images/svg/quickview.svg" alt=""></div>
+                </div>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <img src="source-images/product-3.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="px-3">
+                        <p class="text-muted" style="font-size:small;">SKU: 573-4986-C</p>
+
+                        <p class="bold">Motor Oil Level 5</p>
+                            <br> 
+
+ <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                2 reviews</small></p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="bold crd">$589.00</p>
+                                    <img src="source-images/svg/cart-20.svg"  class="crdimg" alt="...">
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 4  -->
+        <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" title="Aluminium Wheel">
+            <div class="card mb-4 cardd ">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                    </div>
+                    <div class="px-2"><img src="source-images/svg/quickview.svg" alt=""></div>
+                </div>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <img src="source-images/product-4.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="px-3">
+                        <p class="text-muted" style="font-size:small;">SKU: 753-38573-B</p>
+
+
+                        <p class="bold">Brandix Engine Block Z4<p>
+                            <br>
+ <p class="card-text" style="margin-bottom: 1px;">
+    <small class="text-muted">
+        <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                no reviews</small></p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="bold crd">$589.00</p>
+                                    <img src="source-images/svg/cart-20.svg"  class="crdimg" alt="...">
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- card 5  -->
+        <div class=" col-lg-2 col-md-3 col-sm-6 col-10 card-deck" title="Aluminium Wheel">
+            <div class="card mb-4 cardd ">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                    </div>
+                    <div class="px-2"><img src="source-images/svg/quickview.svg" alt=""></div>
+                </div>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                        <img src="source-images/product-5.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="px-3">
+                        <p class="text-muted" style="font-size:small;">SKU: 67382-67382-B</p>
+
+
+                        <p class="bold">Brandix Clutch Discs Z175<p>
+                             <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                7 reviews</small></p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="bold crd">$345.00</p>
+                                    <img src="source-images/svg/cart-20.svg"  class="crdimg" alt="...">
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Featured Products End  -->
+
+    <!-- shop now pics Start  -->
+
+    <div class="d-flex justify-content-around container">
+        <div><img src="source-images/banner1.jpeg" class="shpimg" alt="">
+        
+        </div>
+        <div><img src="source-images/banner2.jpeg" class="shpimg" alt=""></div>
+    </div>
+
+    <!-- shop now pics End -->
+
+
+    <!-- product list Start  -->
+    <div class=" mt-4 d-flex justify-content-center">
+        <div class="container d-flex justify-content-between">
+            <!-- column 1 -->
+
+            <!-- block card 1-->
+            <div class="col-lg-4 mx-1">
+                <h3 class="bold">Top Rated Products</h3>
+                <div class="card mb-3 card-deck"">
+                    <div class=" row g-0">
+                    <div class="col-md-4">
+                        <img src="source-images/product-6.jpeg" class="img-fluid rounded-start" alt="Card title">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h6 class="card-title">Fantastic 12-Stroke Engine With A Power of 1991 hp</h6>
+                            <p class="card-text" style="
+                            margin-bottom: 1px;">
+                            <small class="text-muted">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                17 reviews</small></p>
+                            <p class="card-text bold">$2579.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block card 2-->
+
+            <div class="card mb-3 card-deck"">
+                    <div class=" row g-0">
+                <div class="col-md-4">
+                    <img src="source-images/product-7.jpeg" class="img-fluid rounded-start" alt="Card title">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h6 class="card-title">Set of Four 19 Inch Spiked Tires</h6>
+                        <p class="card-text" style="
+                            margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                9 reviews</small></p>
+                        <p class="card-text bold">$327.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- block card 3-->
+
+        <div class="card mb-3 card-deck"">
+        <div class=" row g-0">
+            <div class="col-md-4">
+                <img src="source-images/product-8.jpeg" class="img-fluid rounded-start" alt="Card title">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h6 class="card-title">40 Megawatt Low Beam Lamp</h6>
+                    <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                17 reviews</small></p>
+
+                    <p><span style="font-weight:bold ;">$4.00</span>&nbsp;<s> $8.00 </s></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- column 2 -->
+
+    <!-- block card 1-->
+    <div class="col-lg-4 mx-1">
+        <h3 class="bold">Special Offers</h3>
+        <div class="card mb-3 card-deck"">
+                <div class=" row g-0">
+            <div class="col-md-4">
+                <img src="source-images/product-9.jpeg" class="img-fluid rounded-start" alt="Card title">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h6 class="card-title">Bradix Manual Five Speed Gearbox</h6>
+                    <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                6 reviews</small></p>
+                    <p class="card-text bold">$879.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- block card 2-->
+
+    <div class="card mb-3 card-deck"">
+                <div class=" row g-0">
+        <div class="col-md-4">
+            <img src="source-images/product-10.jpeg" class="img-fluid rounded-start" alt="Card title">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h6 class="card-title">Set of Car Floor Mats Brandix Z4</h6>
+                <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                16 reviews</small></p>
+                <p><span style="font-weight:bold ;">$78.00</span>&nbsp;<s> $94.00 </s></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- block card 3-->
+
+    <div class="card mb-3 card-deck"">
+    <div class=" row g-0">
+        <div class="col-md-4">
+            <img src="source-images/product-11.jpeg" class="img-fluid rounded-start" alt="Card title">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h6 class="card-title">Taillights Bradix Z54</h6>
+                <p class="card-text" style="
+                    margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                8 reviews</small></p>
+                <p class="card-text bold">$60.00</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-- column 3 -->
+
+    <div class="col-lg-4 mx-1">
+        <h3 class="bold">Best Seller</h3>
+        <div class="card mb-3 card-deck"">
+                <div class=" row g-0">
+            <div class="col-md-4">
+                <img src="source-images/product-12.jpeg" class="img-fluid rounded-start" alt="Card title">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h6 class="card-title">Brandix Engine Block Z4</h6>
+                    <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> 
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span
+                                <span class="fa fa-star"></span
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                No reviews</small></p>
+                    <p><span style="font-weight:bold ;">$452.00</span>&nbsp;<s> $573.00 </s></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- block card 2-->
+
+    <div class="card mb-3 card-deck"">
+                <div class=" row g-0">
+        <div class="col-md-4">
+            <img src="source-images/product-13.jpeg" class="img-fluid rounded-start" alt="Card title">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h6 class="card-title">Brandix Clutch Discs Z175</h6>
+                <p class="card-text" style="
+                        margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                17 reviews</small></p>
+                <p class="card-text bold">$345.00</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- block card 3-->
+
+    <div class="card mb-3 card-deck"">
+    <div class=" row g-0">
+        <div class="col-md-4">
+            <img src="source-images/product-8.jpeg" class="img-fluid rounded-start" alt="Card title">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h6 class="card-title">40 Megawatt Low Beam Lamp</h6>
+                <p class="card-text" style="
+                    margin-bottom: 1px;"><small class="text-muted"> <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                17 reviews</small></p>
+                <p class="card-text bold">$2579.00</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+    <!-- product list End -->
+
+    <hr class="container">
+
+    <!-- free shipping  Start-->
+    <div class="m-2">
+        <div class="container  d-flex justify-content-between ">
+            <div class="d-flex justify-content-between">
+                <div><img src="source-images/svg/free-delivery.svg" alt="Free shipping" style="padding: 10px;"></div>
+
+                <p><span style="font-weight:bold ;">Free shipping <br></span>For Orders from $50 </p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div><img src="source-images/svg/24-hours.svg" alt="Free shipping" style="padding: 10px;"></div>
+
+                <p><span style="font-weight:bold ;">Support 24/7<br></span>Call us anytime</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div><img src="source-images/svg/payment-security.svg" alt="Free shipping" style="padding: 10px;"></div>
+
+                <p><span style="font-weight:bold ;">100% Safety<br></span>Only Secure payments</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div><img src="source-images/svg/tag.svg" alt="Free shipping" style="padding: 10px;"></div>
+
+                <p><span style="font-weight:bold ;">Hot Offers<br></span>Discounts upto 90% </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- free shipping End -->
+
+
+    <div class="bg-dark p-3">
+        <div class="container mt-4 d-flex">
+            <!-- column 1 -->
+            <div class="col-lg-4">
+                <h4 class="text-white bold colhead">Contact Us </h4>
+                <p class="text-secondary bold">Hi, We are always open for cooperation and suggestions, contact us in one
+                    of the ways below:</p>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-secondary bold">PHONE NUMBER</p>
+                        <p class="text-white bold"> <a href=“tel:08925297807” style="text-decoratio:none; color:white;">
+                                08925297807</a></p>
+
+                    </div>
+                    <div>
+                        <p class="text-secondary bold">EMAIL ADDRESS</p>
+                        <p class="text-white bold"><a href="mailto:careers@uitouxsolutions.com"
+                                style="color: white; text-decoration:none;"> careers@uitouxsolutions.com</a></p>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-secondary bold">OUR LOCATION</p>
+                        <p class="text-white bold">102, Athipalayam Rd, <br>Ramakrishnapuram, <br>Chinnavedampatti,
+                            <br>Coimbatore, <br>Tamil Nadu, <br>641049</p>
+
+                    </div>
+                    <div>
+                        <p class="text-secondary bold">WORKING HOURS</p>
+                        <p class="text-white bold">Mon-Fri 10:00am - 06:00pm</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- column 2 -->
+            <div class="col-lg-2">
+                <p class="text-white bold  d-block ml30 colhead">Information</p>
+
+                <ul>
+                    <li class="text-secondary bold"><a href="#"> About Us</a> </li>
+                    <li class="text-secondary bold"><a href="#"> Delivery Information</a></li>
+                    <li class="text-secondary bold"><a href="#"> Privacy Policy</a></li>
+                    <li class="text-secondary bold"><a href="#"> Brands</a></li>
+                    <li class="text-secondary bold"><a href="#"> Contact Us</a> </li>
+                    <li class="text-secondary bold"><a href="#"> Returns</a></li>
+                    <li class="text-secondary bold"><a href="#"> Site Map</a></li>
+                </ul>
+            </div>
+            <!-- column 3 -->
+            <div class="col-lg-2">
+                <h4 class="text-white bold text-center ml30 colhead">My Account</h4>
+
+                <ul>
+                    <li class="text-secondary bold"><a href="#"> Store Location</a></li>
+                    <li class="text-secondary bold"><a href="#"> Order History</a></li>
+                    <li class="text-secondary bold"><a href="#"> Wish List</a></li>
+                    <li class="text-secondary bold"><a href="#"> Newsletter</a></li>
+                    <li class="text-secondary bold"><a href="#"> Special Offers</a></li>
+                    <li class="text-secondary bold"><a href="#"> Gift Certificate</a></li>
+                    <li class="text-secondary bold"><a href="#"> Affilate</a></li>
+                </ul>
+            </div>
+            <!-- column 4  -->
+            <div class="col-lg-4">
+                <h4 class="text-white bold colhead">Contact Us </h4>
+                <p class="text-secondary bold">Hi, We are always open for cooperation and suggestions, contact us in one
+                    of the ways below:</p>
+                <br>
+                <input type="email" name="" id="email" class="bg-secondary text-center text-white p-1"
+                    style="min-width:250px  ;" placeholder="abcd@email.com">
+
+                <br>
+                <p class="text-secondary bold">Follow us on social networks</p>
+                <div class="d-flex">
+               <div><a href="#Fb"><img src="source-images/facebook.png" class="mx-2" style="width:26px;" alt=""></a></div>
+               <div><a href="#Twitter"><img src="source-images/twitter.png" class="mx-2" style="width:26px;" alt=""></a></div>
+               <div><a href="#Youtube"><img src="source-images/youtube.png" class="mx-2" style="width:26px;" alt=""></a></div>
+               <div><a href="#Instagram"><img src="source-images/instagram.png" class="mx-2" style="width:26px;" alt=""></a></div>
+               <div><a href="#likedin"><img src="source-images/linkedin.png" class="mx-2" style="width:26px;" alt=""></a></div>
+                    </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" rossorigin="anonymous">
+    </script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
